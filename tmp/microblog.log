@@ -1,0 +1,183 @@
+2015-11-04 17:51:12,421 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:34]
+2015-11-04 17:53:03,645 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:34]
+2015-11-04 17:55:40,802 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:34]
+2015-11-04 17:55:41,857 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:34]
+2015-11-04 17:56:13,700 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:34]
+2015-11-04 17:56:35,755 ERROR: Exception on /login [GET] [in C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask_openid.py", line 507, in decorated
+    openid_response, self.extension_responses))
+  File "C:\Users\drsandeep\microblog\app\views.py", line 83, in after_login
+    login_user(user, remember=remember_me)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask_login.py", line 712, in login_user
+    user_id = getattr(user, current_app.login_manager.id_attribute)()
+AttributeError: 'User' object has no attribute 'get_id'
+2015-11-04 18:25:23,023 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:34]
+2015-11-04 18:26:42,200 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:34]
+2015-11-04 18:26:54,434 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:34]
+2015-11-04 18:28:19,214 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:34]
+2015-11-04 23:51:02,174 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:34]
+2015-11-04 23:51:27,670 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:34]
+2015-11-05 12:46:58,253 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:34]
+2015-11-05 12:47:12,051 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:34]
+2015-11-05 12:48:00,776 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:34]
+2015-11-05 12:50:52,732 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:34]
+2015-11-05 12:51:16,997 ERROR: Exception on /index [GET] [in C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\drsandeep\microblog\app\views.py", line 52, in index
+    posts=posts)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\drsandeep\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\drsandeep\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\drsandeep\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2015-11-05 12:51:22,664 ERROR: Exception on /index [GET] [in C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\drsandeep\microblog\app\views.py", line 52, in index
+    posts=posts)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\drsandeep\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\drsandeep\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\drsandeep\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2015-11-05 12:51:38,190 ERROR: Exception on /index [GET] [in C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\drsandeep\microblog\app\views.py", line 52, in index
+    posts=posts)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\drsandeep\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\drsandeep\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\drsandeep\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2015-11-05 12:54:18,338 ERROR: Exception on /index [GET] [in C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\drsandeep\microblog\app\views.py", line 52, in index
+    posts=posts)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\drsandeep\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\drsandeep\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\drsandeep\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Users\drsandeep\microblog\flask\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2015-11-05 13:06:33,038 INFO: microblog startup [in app\__init__.py:34]
+2015-11-05 13:06:48,506 INFO: microblog startup [in app\__init__.py:34]
+2015-11-05 13:07:03,497 INFO: microblog startup [in app\__init__.py:34]
+2015-11-05 13:08:59,046 INFO: microblog startup [in app\__init__.py:34]
+2015-11-05 14:17:48,946 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:36]
+2015-11-05 14:33:31,229 INFO: microblog startup [in app\__init__.py:36]
+2015-11-05 15:03:36,724 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:36]
+2015-11-05 15:03:51,130 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:36]
+2015-11-05 15:04:34,331 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:36]
+2015-11-05 15:05:26,088 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:36]
+2015-11-06 13:49:40,911 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:36]
+2015-11-06 14:56:20,203 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:36]
+2015-11-06 14:58:43,627 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:36]
+2015-11-06 15:02:01,875 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:36]
+2015-11-06 15:09:50,957 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:61]
+2015-11-06 15:11:48,937 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:61]
+2015-11-06 15:12:15,357 INFO: microblog startup [in C:\Users\drsandeep\microblog\app\__init__.py:61]
